@@ -172,7 +172,7 @@ Now that everything is set up, you can start the project by running `ddev start`
 Run `DDEV configure-magento-env`. This will automatically setup your `app/etc/env.php` file with Redis configured
 
 ### Setting up multistore configuration
-Withing `MAGENTO_ROOT_FOLDER/.ddev/nginx_full` add a `magento-stores.conf` containing the following:
+In your project folder `MAGENTO_ROOT_FOLDER/.ddev/nginx_full` add a `magento-stores.conf` containing the following:
 ```nginx
 map $http_host $mage_run_code {
     default '';
