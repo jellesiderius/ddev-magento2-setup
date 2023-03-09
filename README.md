@@ -124,9 +124,10 @@ gulp watch-styles --$@ --live;
 ### Setting up GULP style watching + LiveReload
 1. Download and unzip the [google-chrome-extension-livereload-for-ddev.zip](google-chrome-extension-livereload-for-ddev.zip) file and install this for your Chrome Browser: https://support.google.com/chrome_webstore/answer/2664769?hl=en 
 2. For your Magento 2 project, download https://github.com/bobmotor/magento-2-gulp and configure according to guide in the repo. Make sure to get at least version 1.5.2
+3. Now after setting up step 1 & 2, your browser extension should be available to watch your style changes in Magento. Click on the LiveReload chrome extension button after your project is fired up and `DDEV watch-styles YOURTHEMENAME` is started
 
 ### Configuring your Magento 2 project
-Now that the global settings are done, you can start to configure a DDEV environment for a Magento 2 project, you can simply run these commands:
+Now that the global settings are done, you can start to configure a DDEV environment for a Magento 2 project, you can run these commands:
 ```shell
 ddev config --project-type=magento2 --php-version=8.1 --docroot=pub --disable-settings-management --database=mysql:5.7
 ddev get ddev/ddev-elasticsearch
@@ -168,7 +169,7 @@ Make sure to add a `app/etc/env.php` file with the correct database settings:
 Now that everything is set up, you can start the project by running `ddev start`
 
 ### Configuring Redis for your project
-Simply run `DDEV configure-magento-env`. This will automatically setup your `app/etc/env.php` file with Redis configured
+Run `DDEV configure-magento-env`. This will automatically setup your `app/etc/env.php` file with Redis configured
 
 ### Synchronising databases through SSH
 Mage-DB-Sync is compatible with DDEV. Install this with documentation given at https://github.com/jellesiderius/mage-db-sync and your environment will be easily synchronized
