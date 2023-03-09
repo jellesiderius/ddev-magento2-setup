@@ -7,11 +7,10 @@ Install DDEV through installation guide: https://ddev.readthedocs.io/
 After installing DDEV, follow the following steps
 
 ### Setting up .bashrc for your DDEV shell environment
-1. Navigate to ~/.ddev
-2. If the folder homeadditions is not present yet, create this
-3. Now navigate to ~/.ddev/homeadditions
-4. Create a .bashrc containing the following:
-
+1. Navigate to `~/.ddev`
+2. If the folder `~/.ddev/homeadditions` is not present yet, create this
+3. Now navigate to `~/.ddev/homeadditions`
+4. Create a `~/.ddev/homeadditions/.bashrc` file, containing the following:
 ```bash
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1]/'
@@ -22,7 +21,7 @@ alias ls='ls --color=auto'
 ```
 
 ### Setting up custom commands for DDEV 
-Now navigate to ~/.ddev/commands/web. If this folder structure is not present yet, create this. You should create the following files:
+Now navigate to `~/.ddev/commands/web`. If this folder structure is not present yet, create this. You should create the following files:
 
 `~/.ddev/commands/web/magerun`:
 ```bash
@@ -123,7 +122,7 @@ gulp watch-styles --$@ --live;
 ```
 
 ### Setting up GULP style watching + LiveReload
-1. Download and unzip the [google-chrome-extension-livereload-for-ddev.zip](google-chrome-extension-livereload-for-ddev.zip) file and install this for your Chrome Browser: https://support.google.com/chrome_webstore/answer/2664769?hl=en 
+1. Download and unzip the [https://github.com/jellesiderius/ddev-magento2-example-project/raw/main/google-chrome-extension-livereload-for-ddev.zip](google-chrome-extension-livereload-for-ddev.zip) file and install this for your Chrome Browser: https://support.google.com/chrome_webstore/answer/2664769?hl=en 
 2. For your Magento 2 project, download https://github.com/bobmotor/magento-2-gulp and configure according to guide in the repo. Make sure to get at least version 1.5.2.
 
 ### Configuring your Magento 2 project
