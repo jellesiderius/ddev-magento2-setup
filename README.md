@@ -121,6 +121,13 @@ gulp less --$@;
 gulp watch-styles --$@ --live;
 ```
 
+You have now added the following commands for DDEV:
+- `ddev magerun`
+- `ddev magerun2`
+- `ddev configure-magento-env`
+- `ddev watch-cache`
+- `ddev watch-styles`
+
 ### Setting up GULP style watching + LiveReload
 1. Download and unzip the [google-chrome-extension-livereload-for-ddev.zip](google-chrome-extension-livereload-for-ddev.zip) file and install this for your Chrome Browser: https://support.google.com/chrome_webstore/answer/2664769?hl=en 
 2. For your Magento 2 project, download https://github.com/bobmotor/magento-2-gulp and configure according to guide in the repo. Make sure to get at least version 1.5.2
