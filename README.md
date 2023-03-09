@@ -1,4 +1,4 @@
-# DDEV for Magento 2 and sharing my own configuration files (Mac)
+# DDEV for Magento 2 and sharing my own configuration files
 
 ## Before you start
 Install DDEV through installation guide: https://ddev.readthedocs.io/
