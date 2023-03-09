@@ -131,7 +131,7 @@ You have now added the following commands for DDEV:
 ### Setting up GULP style watching + LiveReload
 1. Download and unzip the [google-chrome-extension-livereload-for-ddev.zip](google-chrome-extension-livereload-for-ddev.zip) file and install this for your Chrome Browser: https://support.google.com/chrome_webstore/answer/2664769?hl=en 
 2. For your Magento 2 project, download https://github.com/bobmotor/magento-2-gulp and configure according to guide in the repo. Make sure to get at least version 1.5.2
-3. Now after setting up step 1 & 2, your browser extension should be available to watch your style changes in Magento. Click on the LiveReload chrome extension button after your project is fired up and `DDEV watch-styles YOURTHEMENAME` is started
+3. Now after setting up step 1 & 2, your browser extension should be available to watch your style changes in Magento. Click on the LiveReload chrome extension button after your project is fired up and `ddev watch-styles YOURTHEMENAME` is started
 
 ### Configuring your Magento 2 project
 Now that the global settings are done, you can start to configure a DDEV environment for a Magento 2 project, you can run these commands:
