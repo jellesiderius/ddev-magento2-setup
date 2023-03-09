@@ -122,7 +122,7 @@ gulp watch-styles --$@ --live;
 ```
 
 ### Setting up GULP style watching + LiveReload
-1. Download and unzip the [https://github.com/jellesiderius/ddev-magento2-example-project/raw/main/google-chrome-extension-livereload-for-ddev.zip](google-chrome-extension-livereload-for-ddev.zip) file and install this for your Chrome Browser: https://support.google.com/chrome_webstore/answer/2664769?hl=en 
+1. Download and unzip the [google-chrome-extension-livereload-for-ddev.zip](google-chrome-extension-livereload-for-ddev.zip) file and install this for your Chrome Browser: https://support.google.com/chrome_webstore/answer/2664769?hl=en 
 2. For your Magento 2 project, download https://github.com/bobmotor/magento-2-gulp and configure according to guide in the repo. Make sure to get at least version 1.5.2
 
 ### Configuring your Magento 2 project
