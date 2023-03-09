@@ -171,5 +171,47 @@ Now that everything is set up, you can start the project by running `ddev start`
 ### Configuring Redis for your project
 Run `DDEV configure-magento-env`. This will automatically setup your `app/etc/env.php` file with Redis configured
 
+### Setting up multistore configuration
+Withing `MAGENTO_ROOT_FOLDER/.ddev/nginx_full` add a `magento-stores.conf` containing the following:
+```nginx
+map $http_host $mage_run_code {
+    default '';
+    store1.ddev.site storecode1;
+    store2.ddev.site storecode2;
+    store3.ddev.site storecode3;
+}
+```
+Next, open up your project's `MAGENTO_ROOT_FOLDER/.ddev/config.yaml` and add additional hostnames:
+```yaml
+additional_hostnames:
+  - store1
+  - store2
+  - store3
+```
+If you're using [Mage-DB-Sync](https://github.com/jellesiderius/mage-db-sync), your can add a `.mage-db-sync-config.json` to your Magento root folder:
+```json
+{
+  "core_config_data": {
+    "0": {
+      "web/unsecure/base_url": "https://store.development/",
+      "web/secure/base_url": "https://store.development/"
+    },
+    "1": {
+      "web/unsecure/base_url": "https://store1.development/",
+      "web/secure/base_url": "https://store1.development/"
+    },
+    "2": {
+      "web/unsecure/base_url": "https://store2.development/",
+      "web/secure/base_url": "https://store2.development/"
+    },
+    "3": {
+      "web/unsecure/base_url": "https://store3.development/",
+      "web/secure/base_url": "https://store3.development/"
+    }
+  }
+}
+```
+_Note: The "1", "2", "3" are your store codes._
+
 ### Synchronising databases through SSH
-Mage-DB-Sync is compatible with DDEV. Install this with documentation given at https://github.com/jellesiderius/mage-db-sync and your environment will be easily synchronized
+[Mage-DB-Sync](https://github.com/jellesiderius/mage-db-sync) is compatible with DDEV. Install this with documentation given at https://github.com/jellesiderius/mage-db-sync and your environment will be easily synchronized
