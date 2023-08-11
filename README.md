@@ -200,20 +200,20 @@ If you're using [Mage-DB-Sync](https://github.com/jellesiderius/mage-db-sync), y
 {
   "core_config_data": {
     "0": {
-      "web/unsecure/base_url": "https://store.development/",
-      "web/secure/base_url": "https://store.development/"
+      "web/unsecure/base_url": "https://store.ddev.site/",
+      "web/secure/base_url": "https://store.ddev.site/"
     },
     "1": {
-      "web/unsecure/base_url": "https://store1.development/",
-      "web/secure/base_url": "https://store1.development/"
+      "web/unsecure/base_url": "https://store1.ddev.site/",
+      "web/secure/base_url": "https://store1.ddev.site/"
     },
     "2": {
-      "web/unsecure/base_url": "https://store2.development/",
-      "web/secure/base_url": "https://store2.development/"
+      "web/unsecure/base_url": "https://store2.ddev.site/",
+      "web/secure/base_url": "https://store2.ddev.site/"
     },
     "3": {
-      "web/unsecure/base_url": "https://store3.development/",
-      "web/secure/base_url": "https://store3.development/"
+      "web/unsecure/base_url": "https://store3.ddev.site/",
+      "web/secure/base_url": "https://store3.ddev.site/"
     }
   }
 }
