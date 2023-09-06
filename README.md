@@ -25,6 +25,8 @@ Now navigate to `~/.ddev/commands/web`. If this folder structure is not present 
 
 `~/.ddev/commands/web/magerun`:
 ```bash
+#!/bin/bash
+
 #ddev-generated
 ## Description: Run Magerun CLI inside the web container
 ## Usage: magerun [flags] [args]
@@ -43,6 +45,8 @@ magerun "$@"
 
 `~/.ddev/commands/web/magerun2`:
 ```bash
+#!/bin/bash
+
 #ddev-generated
 ## Description: Run Magerun2 CLI inside the web container
 ## Usage: magerun2 [flags] [args]
@@ -61,6 +65,8 @@ magerun2 "$@"
 
 `~/.ddev/commands/web/configure-magento-env`:
 ```bash
+#!/bin/bash
+
 #ddev-generated
 ## Description: Configures the env.php file
 ## Usage: configure-magento-env
@@ -93,6 +99,8 @@ bin/magento setup:config:set --db-host=db \
 
 `~/.ddev/commands/web/watch-cache`:
 ```bash
+#!/bin/bash
+
 #ddev-generated
 ## Description: Magento 2 Cache Watcher
 ## Usage: watch-cache [flags] [args]
@@ -109,6 +117,8 @@ fi
 
 `~/.ddev/commands/web/watch-styles`:
 ```bash
+#!/bin/bash
+
 #ddev-generated
 ## Description: Watches LESS changes for your Magento project
 ## Usage: watch-styles --THEME_NAME
