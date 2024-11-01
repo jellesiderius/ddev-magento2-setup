@@ -146,7 +146,7 @@ You have now added the following commands for DDEV:
 ### Configuring your Magento 2 project
 Now that the global settings are done, you can start to configure a DDEV environment for a Magento 2 project, you can run these commands:
 ```shell
-ddev config --project-type=magento2 --php-version=8.3 --docroot=pub --disable-settings-management --database=mysql:5.7
+ddev config --project-type=magento2 --php-version=8.3 --docroot=pub --disable-settings-management --database=mysql:8.0
 ddev get ddev/ddev-elasticsearch
 ddev get ddev/ddev-redis
 ```
