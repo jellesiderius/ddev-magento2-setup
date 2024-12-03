@@ -439,7 +439,7 @@ sub vcl_hit {
     }
 }
 ```
-4. Run bin/magento setup:config:set --http-cache-hosts=varnish:80
+4. Run `bin/magento setup:config:set --http-cache-hosts=varnish:80`
 
 ### Setting up multistore configuration
 In your project folder `MAGENTO_ROOT_FOLDER/.ddev/nginx_full` add a `magento-stores.conf` containing the following:
