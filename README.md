@@ -190,7 +190,7 @@ Run `DDEV configure-magento-env`. This will automatically setup your `app/etc/en
 
 ### Configuring Varnish for your project
 1. Run `ddev get ddev/ddev-varnish`
-2. Add VCL file to .ddev/varnish/default.vcl:
+2. Add VCL file to `.ddev/varnish/default.vcl:`
 ```bash
 # VCL version 5.0 is not supported so it should be 4.0 even though actually used Varnish version is 6
 vcl 4.0;
@@ -443,6 +443,7 @@ sub vcl_hit {
 ddev exec bin/magento setup:config:set --http-cache-hosts=varnish:80;
 ddev exec bin/magento config:set system/full_page_cache/caching_application 2;
 ```
+4. Run `ddev restart` to restart the project. Varnish should now be set up.
 
 
 ### Setting up multistore configuration
